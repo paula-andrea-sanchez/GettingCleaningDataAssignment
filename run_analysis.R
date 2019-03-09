@@ -1,3 +1,5 @@
+library(dplyr)
+
 #1. Merges the training and the test sets to create one data set.
 
   # Load all text files to create data frame
