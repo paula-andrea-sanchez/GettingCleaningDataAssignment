@@ -53,5 +53,5 @@ library(dplyr)
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
   df.tidy <- df.int %>% group_by_(.dots=c("activity","subject")) %>% summarise_all(funs(mean))
-  write.csv(df.tidy, file="tidy-data.txt")
+  write.csv(df.tidy, file="tidy-data.txt", row.names = FALSE)
 
